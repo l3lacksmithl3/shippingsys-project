@@ -1,0 +1,11 @@
+var moongoose = require('../connect');
+var memberSchema = new moongoose.Schema({
+    status: String,
+    pass : String,
+    email : String,
+    name : String,
+    date : String
+},
+{collection: 'member' });
+
+module.exports = memberSchema;

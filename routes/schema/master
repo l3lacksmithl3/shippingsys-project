@@ -1,0 +1,12 @@
+var moongoose = require('../connect');
+var masterSchema = new moongoose.Schema({
+    SEIHINNAME: String,
+    HINBAN : String,
+    KISYU : String,
+    REV : String,
+    type : String,
+    date : String
+},
+{collection: 'master' });
+
+module.exports = masterSchema;

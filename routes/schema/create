@@ -1,0 +1,13 @@
+var moongoose = require("../connect");
+var createSchema = new moongoose.Schema(
+  {
+    username: String,
+    password: String,
+    email: String,
+    name: String,
+    date: Date,
+  },
+  { collection: "create" }
+);
+
+module.exports = createSchema;

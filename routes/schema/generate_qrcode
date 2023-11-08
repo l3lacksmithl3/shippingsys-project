@@ -1,0 +1,16 @@
+var moongoose = require('../connect');
+var generate_qrcodeSchema = new moongoose.Schema({
+    model: String,
+    invoice : String,
+    qty : String,
+    no_pallet : String,
+    total_pallet : String,
+    type : String,
+    status : String,
+    date : String,
+    sendmail : String,
+    story : String
+},
+{collection: 'generate_qrcode' });
+
+module.exports = generate_qrcodeSchema;
